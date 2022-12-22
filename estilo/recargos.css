@@ -1,0 +1,177 @@
+/*table*/
+
+.formulario{
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+}
+.form-cont{
+   width: 90%;
+   margin: 0 auto;
+ 
+}
+.dos{
+  width: 90%;
+  margin: 0 auto;
+}
+.form{
+    width: 350px;
+    height: 450px;
+    margin-top: 50px;
+    border-radius: 25px;
+    border: 2px solid var(--color2);
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  
+  .form_contenedor{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .h3{
+   
+    text-align: center;
+    font-weight: lighter;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--color2);
+  }
+  .icon_form{
+    width:20px;
+    height: 20px;
+    background: white;
+    
+  }
+  .botones{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+  label{
+    margin-top: 15px;
+    padding-left: 20px;
+   
+  }
+  input{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border: 1px solid  black;
+  }
+  select{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .btn_dos{
+    width: 100px;
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+    background: var(--color2);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  
+  }
+
+/*table*/
+#main-container{
+	margin: 0 auto;
+	width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+  border:1px solid var(--color2) ;
+    font-weight: 300;
+  margin-top: 50px;
+}
+
+
+.th,.td{
+	padding: 20px;
+  font-size: small;
+  text-align: center;
+  border:1px solid var(--color2) ;
+}
+.td p{
+text-align: justify;
+ font-size: medium;
+ font-weight: 400;
+}
+.td{
+  border-right: none;
+}
+.td{
+  width:60% ;
+}
+#tb{
+    width: 100%;
+}
+.thead{
+	background-color:var(--color2);
+	color: white;
+}
+
+.tr:nth-child(even){
+	background-color: rgb(231, 231, 231);
+}
+
+ 
+
+
+
+@media(min-width: 600px){
+
+.form{
+  width: 400px;
+}
+#main-container{
+  width: 400px;
+}
+.acordeon{
+  width: 90%;
+  margin:0 auto;
+ 
+}
+.menu-fo{
+  display: block;
+}
+
+
+}
+
+@media(min-width: 900px){
+  .formulario{
+  
+    display: flex;
+    flex-direction: row;
+    }
+.table{
+  margin-top: 0;
+
+}
+.acordeon{
+  width: 90%;
+  margin:0 auto;
+ 
+}
+.acordeon .bloque.activo .contenido{
+  height: auto;
+  font-size: 1em;
+  padding-left: 15px;
+ 
+}
+.info{
+  margin-top: 50px;
+}
+.th{
+
+  font-size: medium;
+}
+}
