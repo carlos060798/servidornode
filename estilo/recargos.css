@@ -64,17 +64,16 @@ flex-direction: column;
     margin: 0 auto;
     margin-bottom: 5px;
   }
-  .btn_dos{
-    width: 100px;
-    height: 32px;
-    border-radius: 20px;
-    border: none;
-    background: var(--color2);
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-  
+  .btn{
+  border: none;
+  background-color: var(--color2);
+  border-radius: 15px;
+  padding: 7px 10px;
+  color: white;
   }
+  
+
+  
 
 /*table*/
 #main-container{

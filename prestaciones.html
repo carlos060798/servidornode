@@ -38,8 +38,6 @@
 
 <body>
   <main>
-    <div class="contendordos">
-
       <section class="formulario">
         <div class="form">
           <form class="form_contenedor">
@@ -53,8 +51,9 @@
             <label for="subsidio" class="label">Cuanto recibes de subsidio</label>
             <input type="number" id="subsidio" class="input" min="0" required >
             <div class="botones">
-              <button id="calcular" class=" btn_dos">Calcular</button>
-              <button type="reset" class=" btn_dos">Borrar</button>
+              <button id="calcular" class=" btn ">Liquidar Meses</button>
+              <button id="Dias" class=" btn">Liquidar Dias</button>
+              <button type="reset" class=" btn">Nuevo</button>
 
             </div>
             <p id="mensaje"></p>
@@ -149,19 +148,7 @@
         <section class="questions__container">
           
         </article>
-        <article class="questions__padding">
-          <div class="questions__answer">
-              <h3 class="questions__title">¿Qué  son las cesantias ?
-                  <span class="questions__arrow">
-                      <img src="img/arraw.svg" class="questions__img">
-                  </span>
-              </h3>
-  
-              <p class="questions__show">es una prestación social en favor de los trabajadores que periódicamente se debe
-                liquidar, y en algunos casos las cesantías se van provisionando mensual o quincenalmente, pero en determinados
-                casos hay que hacer una liquidación definitiva</p>
-          </div>
-      </article>
+         
             <article class="questions__padding">
                 <div class="questions__answer">
                     <h3 class="questions__title">¿Qué  son los interes de la cesantias?
@@ -174,6 +161,19 @@
                       12 %. Este monto se debe entregar directamente a los trabajadores antes del 31 de enero</p>
                 </div>
             </article>
+            <article class="questions__padding">
+              <div class="questions__answer">
+                  <h3 class="questions__title">¿Qué  son las cesantias ?
+                      <span class="questions__arrow">
+                          <img src="img/arraw.svg" class="questions__img">
+                      </span>
+                  </h3>
+      
+                  <p class="questions__show">es una prestación social en favor de los trabajadores que periódicamente se debe
+                    liquidar, y en algunos casos las cesantías se van provisionando mensual o quincenalmente, pero en determinados
+                    casos hay que hacer una liquidación definitiva</p>
+              </div>
+          </article>
   
             <article class="questions__padding">
                 <div class="questions__answer">
@@ -242,6 +242,7 @@
   </footer>
   <script src="js/menu.js"></script>
   <script src="js/recargos.js"></script>
+  <script src="js/recargospordias.js"></script>
 </body>
 
 </html>
