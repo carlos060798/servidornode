@@ -36,14 +36,12 @@ console.log({
   document.querySelector('#salario').focus();
 
  } else if(salario!="" ){
-  function calculardias(timeStart,timeEnd) {
-    let actualDate = new Date();
+ function calcularDias(timeStart, timeEnd) {
+  let diff = timeEnd.getTime() - timeStart.getTime();
+  let diferencia = Math.round(diff / (360 * 24 * 60 * 60 * 1000)); // Cambio de 365 a 360 días
   
-      let diff = timeEnd.getTime() - timeStart.getTime();
-     let diferencia= Math.round(diff / (1000 * 60 * 60 * 24));
- 
-  return   diferencia+1
-  } 
+  return diferencia + 1;
+}
   let  dias= calculardias(inicio,fin) 
   pdias.innerText=dias
   
