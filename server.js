@@ -1,21 +1,19 @@
-const express = require('express');
 const http = require('http');
 const chalk = require('chalk');
 
-const app = express();
-const server = http.createServer(app);
-
 const host = 'localhost';
-const port = 8000; // Puedes cambiar el puerto según tus preferencias
+const port = 8000;
 
-app.get('/', (req, res) => {
-  const response = {
+const servidor = http.createServer((req, res) => {
+  const respuesta = {
     nombre: 'Tu Nombre',
-    mensaje: 'Hola desde tu servidor Node.js con Express.',
+    mensaje: '¡Hola desde el servidor Node.js!'
   };
-  res.json(response);
+
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify(respuesta));
 });
 
-server.listen(port, host, () => {
-  console.log(chalk.green(`El servidor está escuchando en http://${host}:${port}`));
+servidor.listen(port, host, () => {
+  console.log(chalk.green(`Servidor escuchando en http://${host}:${port}`));
 });
