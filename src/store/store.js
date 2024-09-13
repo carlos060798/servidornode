@@ -9,7 +9,7 @@ import {authSlice} from './auth/authSlice';
 */
 
 
-export const store = configureStore({
+export const   storeValue = configureStore({
   reducer: {
     // Aquí se pueden agregar todos los reducers que se necesiten
     // counter: counterReducer

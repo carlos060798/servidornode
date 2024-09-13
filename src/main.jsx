@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
 import { JournalApp } from './JournalApp';
-import { store } from './store/store';
 import './styles.css';
 import { Provider } from 'react-redux';
+import { storeValue } from './store/store';
 
 /*
  Provaider es un componente de react-redux que permite que todos los componentes hijos tengan acceso al store de redux
@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       /* 
       store es el store de Redux que se importa de store.js
       */
-      store
+      storeValue
     }> 
     <BrowserRouter> 
     
